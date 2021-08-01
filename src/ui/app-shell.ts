@@ -29,7 +29,16 @@ export class AppShellElement extends Connected {
     ? html`
       <auth-status></auth-status>
       <hr/>
-      <view-account></view-account>` :
+      <p>This Web Component has not been fleshed out yet.</p>
+      <p>When it is:</p>
+      <ul>
+        <li>It will only be visible to those who are already admins.</li>
+        <li>It will allow super-admins or equivalent to assign roles as admins</li>
+        <li>It will allow admins to assign or remove other roles</li>
+        <li>... that kind of thing</li>
+      </ul>
+      
+      ` :
     html`<view-signin></view-signin>`
   }
 

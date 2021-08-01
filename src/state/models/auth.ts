@@ -62,7 +62,6 @@ export default createModel({
         auth.onAuthStateChanged(async user => {
           if (user) {
             dispatch.auth.signedIn(user)
-            dispatch.retrieve.interest()
           } else {
             dispatch.auth.signedOut()
           }
